@@ -41,7 +41,7 @@ python train.py
 Excecute the above command (with arguments) to train a clean sequential recommender, select datasets from Movielens 1M/20M, Beauty, Games, LastFM, Steam and Yoochoose. Availabel models are NARM, SASRec, Locker and BERT4Rec. Trained models could be found under ./experiments/model-code/dataset-code/models/best_acc_model.pth
 
 
-## Train Recommender Models with Defense
+## Train Recommender Models with Defense Methods
 
 ```bash
 python train_robust.py --defense_method=dirichlet
@@ -52,12 +52,12 @@ python train_robust.py --defense_method=advtrain
 Excecute the first command (with arguments) to train with Dirichlet neighborhood sampling, excecute the second command (with arguments) to perform adversarial training, select datasets from Movielens 1M/20M, Beauty, Games, LastFM, Steam and Yoochoose. Availabel models are NARM, SASRec, Locker and BERT4Rec. Trained models could be found under ./experiments/defense/model-code/dataset-code/models/best_acc_model.pth
 
 
-## Attack Trained Black-Box Recommender Models
+## Attack Trained Recommender Models
 
 ```bash
 python attack.py
 ```
-Run the above command (with arguments) to perform profile pollution attacks, add defense_method argument to attack models trained with our defense methods
+Run the above command (with arguments) to perform profile pollution attacks, select datasets from Movielens 1M/20M, Beauty, Games, LastFM, Steam and Yoochoose. Availabel models are NARM, SASRec, Locker and BERT4Rec. Add defense_method argument to attack models trained with our defense methods
 
 
 ## Performance
@@ -71,3 +71,8 @@ Recommender systems are first trained and attacked with the proposed substitutio
 ### Defense Performance
 
 <img src=pics/defense.png width=1000>
+
+
+## Acknowledgement
+
+During the implementation we base our code mostly on [Dirichlet Neighborhood Ensemble](https://github.com/dugu9sword/dne) from Yi Zhou and [BERT4Rec](https://github.com/jaywonchung/BERT4Rec-VAE-Pytorch) by Jaewon Chung. Many thanks to these authors for their great work!
