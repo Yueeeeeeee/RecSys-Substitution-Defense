@@ -1,6 +1,6 @@
 # Introduction
 
-The RecSys-Substitution-Defense repository is the PyTorch Implementation of RecSys 2022 Paper [Defending Substitution-Based Profile Pollution Attacks on Sequential Recommenders](https://arxiv.org/abs/2109.01165)
+The RecSys-Substitution-Defense repository is the PyTorch Implementation of RecSys 2022 Paper [Defending Substitution-Based Profile Pollution Attacks on Sequential Recommenders](https://arxiv.org/abs/2207.11237)
 
 <img src=pics/intro.png>
 
